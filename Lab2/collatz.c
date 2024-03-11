@@ -1,5 +1,4 @@
 #include "collatz.h"
-#include <stdio.h>
 
 int collatz_conjecture(int input) {
     if(input%2 == 0)return input/2;

@@ -1,15 +1,17 @@
 #include <stdio.h>
-#include <dlfcn.h>
-
+#ifdef DYNAMIC
+    #include <dlfcn.h>
+#endif
 
 int main(void){
+#ifdef DYNAMIC
     void *handle= dlopen("./libcollatz.so", RTLD_LAZY);
     if(!handle){
         printf("Opening error\n");
         return 0;
     }
-    int (*collatz)(int input, int max_iter);
-    collatz = dlsym(handle, "test_collatz_convergence");
+    int (*test_collatz_convergence)(int input, int max_iter);
+    test_collatz_convergence = dlsym(handle, "test_collatz_convergence");
 
     if(dlerror()){
         printf("Collatz error\n");
@@ -21,8 +23,10 @@ int main(void){
     int numbers_size = sizeof(numbers)/sizeof(numbers[0]);
 
     for(int i=0; i<numbers_size; ++i){
-        printf("%d: %d\n", numbers[i], collatz(numbers[i],MAX_ITER));
+        printf("%d: %d\n", numbers[i], test_collatz_convergence(numbers[i],MAX_ITER));
     }
     dlclose(handle);
+#endif
+    printf("Symbol preprocesora DYNAMIC nie został zdefiniowany.\n");
     return 0;
 }

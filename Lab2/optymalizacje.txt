@@ -1,0 +1,33 @@
+-O0: Brak optymalizacji.
+    Ta flaga wyłącza wszystkie optymalizacje. Kod kompilowany z tą flagą jest łatwiejszy do debugowania,
+    ponieważ lepiej odzwierciedla strukturę kodu źródłowego.
+    Jest to domyślna flaga, gdy nie jest określona żadna inna flaga optymalizacji.
+
+-O1: Podstawowe optymalizacje.
+    Ta flaga włącza podstawowe optymalizacje, takie jak eliminacja martwego kodu,
+    optymalizacja skoków i minimalizacja rozmiaru kodu.
+
+-O2: Średnie optymalizacje.
+    Ta flaga włącza bardziej agresywne optymalizacje niż -O1, co może prowadzić do lepszej wydajności kodu,
+    ale może również wydłużyć czas kompilacji.
+
+-O3: Wysokie optymalizacje.
+    TTa flaga włącza najwyższy poziom optymalizacji. W porównaniu do -O2,
+    -O3 może wprowadzić bardziej agresywne optymalizacje, które mogą poprawić wydajność kodu,
+    ale mogą również powodować większe zużycie zasobów kompilatora.
+
+-Os: Optymalizacja rozmiaru kodu.
+    Ta flaga optymalizuje rozmiar kodu poprzez eliminację niepotrzebnych instrukcji i danej,
+    co może być przydatne w przypadku aplikacji, gdzie ważna jest wielkość pliku wykonywalnego.
+
+-Ofast: Maksymalne przyspieszenie kosztem niezgodności ze standardem.
+    Ta flaga włącza jak najwięcej optymalizacji, nawet kosztem zgodności ze standardem języka.
+    Może być używana, gdy wydajność jest kluczowa i niezgodność ze standardem nie jest problemem.
+
+-Og: Optymalizacja dla łatwej debugowania.
+    Ta flaga jest przeznaczona do ułatwienia debugowania. Włącza podstawowe optymalizacje,
+    które nie utrudniają procesu debugowania, takie jak eliminacja martwego kodu i optymalizacja skoków.
+
+-Og0: Wyłącza optymalizacje dla łatwej debugowania.
+    Ta flaga wyłącza optymalizacje dla łatwej debugowania. Jest przydatna,
+    jeśli chcemy wyłączyć wszystkie optymalizacje, ale zachować kod w optymalnym stanie do debugowania.
