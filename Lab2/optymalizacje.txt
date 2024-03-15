@@ -31,3 +31,5 @@
 -Og0: Wyłącza optymalizacje dla łatwej debugowania.
     Ta flaga wyłącza optymalizacje dla łatwej debugowania. Jest przydatna,
     jeśli chcemy wyłączyć wszystkie optymalizacje, ale zachować kod w optymalnym stanie do debugowania.
+
+ objdump -d  main_static

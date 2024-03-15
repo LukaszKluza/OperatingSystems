@@ -1,0 +1,4 @@
+Jest to przykladowy tekst podrzebny do realizacji zadania z przedmiotu Systemy Operacyjne. 1
+Jest to przykladowy tekst podrzebny do realizacji zadania z przedmiotu Systemy Operacyjne. 2
+Jest to przykladowy tekst podrzebny do realizacji zadania z przedmiotu Systemy Operacyjne. 3
+Jest to przykladowy tekst podrzebny do realizacji zadania z przedmiotu Systemy Operacyjne. 4

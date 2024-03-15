@@ -27,6 +27,8 @@ int main(void){
     }
     dlclose(handle);
 #endif
+#ifndef DYNAMIC
     printf("Symbol preprocesora DYNAMIC nie został zdefiniowany.\n");
+#endif
     return 0;
 }
