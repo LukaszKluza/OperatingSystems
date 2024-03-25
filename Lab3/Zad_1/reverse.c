@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include "reverse.h"
 
-int min(int a, int b) {
-    return a < b ? a : b;
-}
-
 void reverse_by_bite(char* input_file, char* output_file){
     FILE *input =  fopen ( input_file , "r");
     FILE *output =  fopen ( output_file , "w");

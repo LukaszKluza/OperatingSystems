@@ -1,2 +1,2 @@
-Time of copying by bites: 0.001890s
-Time of copying by blocks: 0.000054s
+Time of copying by bites: 0.004425s
+Time of copying by blocks: 0.000103s
