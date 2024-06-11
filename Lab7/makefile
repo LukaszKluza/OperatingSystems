@@ -4,11 +4,11 @@ CFLAGS = -Wall
 all: server client
 
 server: server.c
-	$(CC) $(CFLAGS) server.c -o server
+	$(CC) $(CFLAGS) server.c -o server -lpthread
 
 
 client: client.c
-	$(CC) $(CFLAGS) client.c -o client
+	$(CC) $(CFLAGS) client.c -o client -lpthread
 
 clear:
 	rm -f server client

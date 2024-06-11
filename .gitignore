@@ -51,7 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 /Notatki/
-/KluzaLukasz-cw04.tar.gz
-/KluzaLukasz-cw06.tar.gz
-/KluzaLukasz-cw07.tar.gz
+/KluzaLukasz*
 /Lukasz_Kluza_KOL1.tar.gz
+
